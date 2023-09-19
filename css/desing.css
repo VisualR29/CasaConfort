@@ -1,0 +1,96 @@
+/*!--------         reset         --------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*?--------        header         --------*/
+
+.navegador{
+    background-color: #2e355a;
+    padding: 10px;
+}
+
+/*?--------         main          --------*/
+
+/**--------        banner         --------*/
+
+.main-index{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-areas: 
+    "banner banner"
+    "somos mision"
+    " ";
+}
+
+.banner {
+    height: 80vh;
+    background-image: url(../img/banner.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    background-color: #2e355a70;
+    border-radius: 10px;
+    color: #ffdff4;
+    padding: 7px 10px 7px 10px;
+    margin-top: 5%;
+}
+
+.subtitulo{
+    background-color: #2e355a70;
+    padding: 12px;
+    color: #e2e2e2;
+}
+
+/**--------        misión         --------*/
+
+
+/*?--------        footer         --------*/
+
+
+.pie{
+    background-color: #130e1a;
+}
+
+/*!--------    paleta de color    --------*/
+
+.color1 {
+    color: #130e1a;
+}
+
+.color2 {
+    color: #2e355a;
+}
+
+.color3 {
+    color: #6962a7;
+}
+
+.color4 {
+    color: #bb9afa;
+}
+
+.color5 {
+    color: #ffdff4;
+}
+
+.color6 {
+    color: #f3eae8;
+}
+
+.color7 {
+    color: #777772;
+}
+
+.color8 {
+    color: #e2e2e2;
+}
