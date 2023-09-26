@@ -58,6 +58,19 @@
     color: #e2e2e2;
 }
 
+.carrusel {
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.carrusel-img{
+    border: 2px solid #130e1a;
+}
+
+.carrusel-text{
+    background-color: #5c04ff;
+}
+
 /**--------        misión         --------*/
 
 
