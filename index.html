@@ -15,24 +15,26 @@
 
 
 <body>
+
     <header>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item nav-botton">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" href="./pages/services.html">Services</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" href="./pages/about.html">About us</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" aria-disabled="true" href="./pages/contact.html">Contact us</a>
-                </li>
-            </ul>
-            <div>
-                <a href="./pages/form.html"><img src="./img/profile.png" alt="Perfil CasaConfort"></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">CasaConfort</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="./pages/services.html">Service</a>
+                        <a class="nav-link" href="./pages/about.html">About us</a>
+                        <a class="nav-link" href="./pages/contact.html">Contact us</a>
+                    </div>
+                    <div class="profile navbar-collapse">
+                        <a href="./pages/form.html"><img src="./img/profile.png" alt="Perfil CasaConfort"></a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -114,53 +116,40 @@
 
         <hr>
 
-        <section>
+        <section class="nos-con">
             <div class="nosotros">
-
+                <h2>Sobre nosotros</h2>
+                <h3>Misión</h3>
+                <p>Estamos dedicados a mejorar la calidad de vida de las personas
+                al ofrecer una gama completa de servicios para el hogar, cuidando cada detalle y
+                buscando siempre superar las expectativas de nuestros clientes.</p>
+                <h3>Visión</h3>
+                <p>Nuestra visión es ser reconocidos como el socio de confianza que
+                simplifica y enriquece la vida de nuestros clientes, brindándoles soluciones completas y
+                personalizadas para todas sus necesidades en el hogar.</p>
+                <hr>
+                <a href="./pages/about.html">Ver más</a>
             </div>
             <div class="contactos">
                 <h2>Contáctanos para más detalles</h2>
-                
-                <a href="./pages/contact.html">Ver más opciones</a>
-            </div>
-        </section>
-
-        <section>
-            <div class="mision">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Misión
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Estamos dedicados a mejorar la calidad de vida de las personas
-                                al ofrecer una gama completa de servicios para el hogar, cuidando cada detalle y
-                                buscando siempre superar las expectativas de nuestros clientes.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Visión
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Nuestra visión es ser reconocidos como el socio de confianza que
-                                simplifica y enriquece la vida de nuestros clientes, brindándoles soluciones completas y
-                                personalizadas para todas sus necesidades en el hogar.</div>
-                        </div>
-                    </div>
+                <div class="red1">
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/526142474329" target="_blank" rel="noopener" aria-label="Whatsapp"><img src="./img/whatscolor.png" alt="WhatsApp"></a>
+                    <p>Contactame por privado en WhatsApp</p>
+                </div>
+                <div class="red2">
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/visurojas/" target="_blank" rel="noopener" aria-label="instagram"><img src="./img/instacolor.png" alt="Instagram"></a>
+                    <p>Contactame por medio de Instagram</p>
+                </div>
+                <div class="redes-link">
+                    <a href="./pages/contact.html">Ver más opciones</a>
                 </div>
             </div>
         </section>
+
+
+        
 
     </main>
 

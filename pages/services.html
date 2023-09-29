@@ -14,29 +14,81 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item nav-botton">
-                    <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" href="./services.html">Services</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" href="./about.html">About us</a>
-                </li>
-                <li class="nav-item nav-botton">
-                    <a class="nav-link" aria-disabled="true" href="./contact.html">Contact us</a>
-                </li>
-            </ul>
-            <div>
-                <a href="./form.html"><img src="./../img/profile.png" alt="Perfil CasaConfort"></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./../index.html">CasaConfort</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+                        <a class="nav-link" href="./services.html">Service</a>
+                        <a class="nav-link" href="./about.html">About us</a>
+                        <a class="nav-link" href="./contact.html">Contact us</a>
+                    </div>
+                    <div class="profile navbar-collapse">
+                        <a href="./form.html"><img src="./../img/profile.png" alt="Perfil CasaConfort"></a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
-    
+
     <main>
+
+        <section class="lista">
+            <h1>Servicios</h1>
+            <ul>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#jardineria">Jardinería</a></li>
+                <li><a href="#promeria">Promería</a></li>
+            </ul>
+        </section>
+
+        <section class="seccion-servicio" id="chef">
+            <h2>Chef</h2>
+            <div class="alfa">
+                <h3></h3>
+                <img src="./../img/chef1.jpg" alt="Chef1">
+            </div>
+            <div class="beta">
+                <h3></h3>
+                <img src="./../img/chef2.jpg" alt="Chef2">
+            </div>
+            <div class="gamma">
+                <h3></h3>
+                <img src="./../img/chef3.jpg" alt="chef3">
+            </div>
+        </section>
+
+        <section class="seccion-servicio" id="jardineria">
+            <h2>Jardinería</h2>
+            <div class="alfa">
+                <h3></h3>
+            </div>
+            <div class="beta">
+                <h3></h3>
+            </div>
+            <div class="gamma">
+                <h3></h3>
+            </div>
+        </section>
+
+        <section class="seccion-servicio" id="plomeria">
+            <h2>Promeria</h2>
+            <div>
+                <h3></h3>
+            </div>
+            <div>
+                <h3></h3>
+            </div>
+            <div>
+                <h3></h3>
+            </div>
+        </section>
 
     </main>
 

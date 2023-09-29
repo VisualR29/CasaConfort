@@ -19,18 +19,14 @@ header nav div img {
     height: 45px;
 }
 
+.profile{
+    display: flex;
+    justify-content: end;
+}
+
 /*?--------         main          --------*/
 
 /*?--------         index          --------*/
-
-.main-index {
-    display: grid;
-    grid-template-columns: 1fr 0.25fr;
-    grid-template-areas:
-        "banner banner"
-        "somos mision"
-        " ";
-}
 
 /**--------        banner         --------*/
 
@@ -46,12 +42,26 @@ header nav div img {
     align-items: center;
 }
 
-.banner div h1 {
+.banner div h1, .banner div p{
     background-color: #2e355a70;
+    text-align: center;
     border-radius: 10px;
     color: #ffdff4;
     padding: 7px 10px 7px 10px;
     margin-top: 5%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+@media screen and (max-width: 800px){
+    .banner div h1, .banner div p{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .banner div{
+        background-image: url(../img/minibanner.png);
+    }
 }
 
 .banner div p {
@@ -62,15 +72,38 @@ header nav div img {
 
 /**-----------      Somos --------------*/
 
-.somos{
-    margin: 20px;
+.somos {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+    background-color: #e2e2e2;
 }
 
-.somos div img{
-    width: 80vh;
+.somos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.somos div h2 {
+    color: #5c04ff;
+    padding-top: 20px;
+}
+
+.somos div p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.somos div img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .somos{
+        grid-template-columns: 1fr;
+    }
 }
 
 /**-----------      Carrusel BS --------------*/
@@ -80,15 +113,21 @@ header nav div img {
     margin-right: 10vh;
 }
 
-.carrusel-img{
+.carrusel h2 {
+    color: #5c04ff;
+    padding: 10px;
+    text-align: center;
+}
+
+.carrusel-img {
     border: 2px solid #130e1a;
 }
 
-.carrusel-text{
+.carrusel-text {
     background-color: #5c04ff;
 }
 
-.boton-comprar{
+.boton-comprar {
     background-color: #e2e2e2c6;
     border-radius: 10px;
     padding: 5px;
@@ -98,14 +137,317 @@ header nav div img {
 
 /**--------     misión      --------*/
 
-.nosotros{
+.nos-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background-color: #e2e2e2;
+}
+
+@media screen and (max-width: 800px) {
+    .nos-con{
+        grid-template-columns: 1fr;
+    }
+    .contactos{
+        background-color: #f3eae8;
+    }
+    .contactos h2{
+        margin-top: 30px;
+    }
+}
+
+.nosotros {
+    text-align: center;
+    margin: 5px 25px 5px 25px;
+}
+
+.nosotros h2 {
+    color: #5c04ff;
+}
+
+.nosotros h3 {
+    color: #bb9afa;
+    background-color: #2e355a;
 
 }
 
-.contactos{
+.nosotros a {
+    text-decoration: none;
+    color: #bb9afa;
+    background-color: #130e1a;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+
+.nosotros a:hover {
+    color: #45e6ff;
+}
+
+/**--------     Contacto      --------*/
+
+.contactos {
+    text-align: center;
+    display: grid;
+    grid-template-rows: .5fr 2fr 1fr;
+    gap: 50px;
+    grid-template-areas:
+        "contacta contacta"
+        "whats insta"
+        "link link";
+}
+
+@media screen and (max-width: 400px){
+    .contactos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px 250px 300px 50px;
+        gap: 25px;
+        grid-template-areas: 
+        "contacta"
+        "whats"
+        "insta"
+        "link";
+    }
+    .red1{
+        margin: 50px;
+        height: 250px;
+    }
+    .red2{
+        margin: 50px;
+        height: 250px;
+    }
+    .redes-link{
+        margin-bottom: 40px;
+    }
+}
+
+.contactos h2 {
+    grid-area: contacta;
+    color: #5c04ff;
+}
+
+.red1 {
+    grid-area: whats;
+    background-color: #0a1c28;
+    color: #bb9afa;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.red2 {
+    grid-area: insta;
+    background-color: #0a1c28;
+    color: #bb9afa;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.redes-link{
+    grid-area: link;
+}
+
+.redes-link a{
+    text-decoration: none;
+    color: #bb9afa;
+    background-color: #130e1a;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+
+.redes-link a:hover {
+    color: #45e6ff;
+}
+
+
+/*?--------         service         --------*/
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a1c28;
+}
+
+.lista h1 {
+    color: #bb9afa;
+    font-size: 60px;
+}
+
+.lista ul {
+    list-style: none;
+}
+
+.lista ul li a {
+    color: #6962a7;
+}
+
+.seccion-servicio {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "alfa beta gamma";
+    gap: 25px;
+    background-color: #bb9afa;
+}
+
+.seccion-servicio h2 {
+    color: #2e355a;
+    grid-area: title;
+}
+
+.seccion-servicio div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.alfa {
+    grid-area: alfa;
+}
+
+.beta {
+    grid-area: beta;
+}
+
+.gamma {
+    grid-area: gamma;
+}
+
+/*?--------          About         --------*/
+
+.about-title{
+    background-color: #130e1a;
+    text-align: center;
+    color: #6962a7;
+    padding: 25px;
+}
+
+.about-title h2{
+    color: #bb9afa;
+    font-size: 45px;
+}
+
+.about-topic{
+    background-color: #c9e5e9;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+@media screen and (max-width:800px){
+    .about-grid{
+        grid-template-columns: 1fr; 
+    }
+}
+
+.frases{
+background-color: #f3eae8;
+padding: 10px;
+}
+
+.frases h3{
+    text-align: center;
+}
+
+/*?--------          Contact         --------*/
+
+.socialpage {
+    background-color: #f3eae8;
+    text-align: center;
+    color: #130e1a;
+}
+
+.socialpage h1 {
+    padding: 30px;
+}
+
+.socialpage h2 {
+    font-size: xx-large;
+    padding-top: 15px;
 
 }
 
+.socialpage div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    text-align: center;
+}
+
+.socialpage div div {
+    width: 300px;
+    height: 430px;
+    box-sizing: border-box;
+    background-color: #6962a7;
+    border: 3px solid #0a1c28;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialpage div div img {
+    width: 180px;
+    height: 180px;
+}
+
+.seccontenido,
+.seccontacto {
+    background-color: #c9e5e9;
+
+}
+
+.link{
+    background-color: #32a2bc;
+    border: 2px solid #163d50;
+    border-radius: 8px;
+    padding: 2px;
+    text-decoration: none;
+    color: #0a1c28;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*?--------          forms         --------*/
+
+.registro {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro form div {
+    margin-bottom: 10px;
+}
+
+.registro h1,
+.registro form h3 {
+    margin-left: 20px;
+}
+
+.registro-boton {
+    margin: 40px;
+}
+
+.registro-boton a {
+    padding: 8px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #0a1c28;
+    outline: 2px solid #45e6ff;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.registro-boton a:hover {
+    color: #5c04ff;
+}
 
 
 /*?--------        footer         --------*/
@@ -126,12 +468,26 @@ footer i {
     margin: 50px;
 }
 
-footer i:hover{
-    color:#5c04ff;
+footer i:hover {
+    color: #5c04ff;
 }
 
-footer h3, footer p {
+footer h3,
+footer p {
     color: #6962a7;
+}
+
+@media screen and (max-width: 1000px){
+    footer i {
+        font-size: 50px;
+        margin: 40px;
+    }
+}
+@media screen and (max-width: 750px){
+    footer i {
+        font-size: 40px;
+        margin: 12px;
+        }
 }
 
 /*!--------    paleta de color    --------*/
