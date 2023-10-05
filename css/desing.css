@@ -19,7 +19,7 @@ header nav div img {
     height: 45px;
 }
 
-.profile{
+.profile {
     display: flex;
     justify-content: end;
 }
@@ -32,7 +32,7 @@ header nav div img {
 
 .banner div {
     height: 80vh;
-    background-image: url(../img/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.163), rgba(0, 0, 0, 0.312)), url(../img/banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,7 +42,8 @@ header nav div img {
     align-items: center;
 }
 
-.banner div h1, .banner div p{
+.banner div h1,
+.banner div p {
     background-color: #2e355a70;
     text-align: center;
     border-radius: 10px;
@@ -52,14 +53,17 @@ header nav div img {
     margin-left: 80px;
     margin-right: 80px;
 }
-@media screen and (max-width: 800px){
-    .banner div h1, .banner div p{
+
+@media screen and (max-width: 800px) {
+
+    .banner div h1,
+    .banner div p {
         margin-top: 8%;
     }
 }
 
-@media screen and (max-width: 650px){
-    .banner div{
+@media screen and (max-width: 650px) {
+    .banner div {
         background-image: url(../img/minibanner.png);
     }
 }
@@ -100,8 +104,8 @@ header nav div img {
     width: 100%;
 }
 
-@media screen and (max-width: 800px){
-    .somos{
+@media screen and (max-width: 800px) {
+    .somos {
         grid-template-columns: 1fr;
     }
 }
@@ -145,13 +149,15 @@ header nav div img {
 }
 
 @media screen and (max-width: 800px) {
-    .nos-con{
+    .nos-con {
         grid-template-columns: 1fr;
     }
-    .contactos{
+
+    .contactos {
         background-color: #f3eae8;
     }
-    .contactos h2{
+
+    .contactos h2 {
         margin-top: 30px;
     }
 }
@@ -196,26 +202,29 @@ header nav div img {
         "link link";
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .contactos {
         grid-template-columns: 1fr;
         grid-template-rows: 25px 250px 300px 50px;
         gap: 25px;
-        grid-template-areas: 
-        "contacta"
-        "whats"
-        "insta"
-        "link";
+        grid-template-areas:
+            "contacta"
+            "whats"
+            "insta"
+            "link";
     }
-    .red1{
+
+    .red1 {
         margin: 50px;
         height: 250px;
     }
-    .red2{
+
+    .red2 {
         margin: 50px;
         height: 250px;
     }
-    .redes-link{
+
+    .redes-link {
         margin-bottom: 40px;
     }
 }
@@ -241,11 +250,11 @@ header nav div img {
     padding: 5px;
 }
 
-.redes-link{
+.redes-link {
     grid-area: link;
 }
 
-.redes-link a{
+.redes-link a {
     text-decoration: none;
     color: #bb9afa;
     background-color: #130e1a;
@@ -261,95 +270,166 @@ header nav div img {
 /*?--------         service         --------*/
 
 .lista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0a1c28;
+    background-color: #130e1a;
 }
 
 .lista h1 {
-    color: #bb9afa;
+    text-align: center;
+    color: #c9e5e9;
     font-size: 60px;
+    padding: 19px;
 }
 
-.lista ul {
-    list-style: none;
-}
-
-.lista ul li a {
-    color: #6962a7;
-}
-
-.seccion-servicio {
-    width: 100%;
+.grid-lista {
+    padding: 0px 98px 98px 98px;
     display: grid;
-    grid-template-areas:
-        "title title title"
-        "alfa beta gamma";
-    gap: 25px;
-    background-color: #bb9afa;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 30px;
 }
 
-.seccion-servicio h2 {
-    color: #2e355a;
-    grid-area: title;
+@media screen and (max-width: 1350px) {
+    .grid-lista {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
-.seccion-servicio div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media screen and (max-width: 1000px){
+    .grid-lista{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
 }
 
-.alfa {
-    grid-area: alfa;
+@media screen and (max-width: 700px){
+    .grid-lista{
+        grid-template-columns: 1fr;
+        grid-template-rows: 12fr;
+    }
 }
 
-.beta {
-    grid-area: beta;
+.lista-elemento a {
+    text-decoration: none;
+    color: #45e6ff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.gamma {
-    grid-area: gamma;
+.servicio-seccion{
+    padding-top: 48px;
+}
+
+.servicio-seccion h2{
+    font-size: 35px;
+    text-align: center;
+    color: #45e6ff;
+    margin: 25px;
+}
+
+.servicio-seccion:nth-child(even){
+    background-color: #2e355a;
+}
+
+.servicio-seccion:nth-child(odd){
+    background-color: #0a1c28;
+}
+
+.servicio-seccion:nth-child(odd) div div{
+    border: 2px solid #163d50;
+    background-color: #315a6e;
+}
+
+.servicio-seccion:nth-child(odd) div div h3{
+    color: #45e6ff;
+}
+
+.servicio-cuadro{
+    padding: 98px 0px 98px 98px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicio-elemento h3{
+    padding: 20px;
+    color: #26006d;
+}
+
+.servicio-elemento img{
+    width: 300px;
+    height: 200px;
+}
+
+.servicio-elemento{
+    width: 350px;
+    height: 450px;
+    border: 2px solid #7a75a8;
+    background-color: #6962a7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otros-servicios{
+    display: flex;
+    justify-content: center;
+}
+
+.otros-servicios a{
+    text-decoration: none;
+    background-color: #163d50;
+    color: #45e6ff;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.lista-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /*?--------          About         --------*/
 
-.about-title{
+.about-title {
     background-color: #130e1a;
     text-align: center;
     color: #6962a7;
     padding: 25px;
 }
 
-.about-title h2{
+.about-title h2 {
     color: #bb9afa;
     font-size: 45px;
 }
 
-.about-topic{
+.about-topic {
     background-color: #c9e5e9;
     text-align: center;
     padding: 10px;
 }
 
-.about-grid{
+.about-grid {
     display: grid;
     grid-template-columns: 75% 25%;
 }
 
-@media screen and (max-width:800px){
-    .about-grid{
-        grid-template-columns: 1fr; 
+@media screen and (max-width:800px) {
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-.frases{
-background-color: #f3eae8;
-padding: 10px;
+.frases {
+    background-color: #f3eae8;
+    padding: 10px;
 }
 
-.frases h3{
+.frases h3 {
     text-align: center;
 }
 
@@ -402,7 +482,7 @@ padding: 10px;
 
 }
 
-.link{
+.link {
     background-color: #32a2bc;
     border: 2px solid #163d50;
     border-radius: 8px;
@@ -477,17 +557,18 @@ footer p {
     color: #6962a7;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     footer i {
         font-size: 50px;
         margin: 40px;
     }
 }
-@media screen and (max-width: 750px){
+
+@media screen and (max-width: 750px) {
     footer i {
         font-size: 40px;
         margin: 12px;
-        }
+    }
 }
 
 /*!--------    paleta de color    --------*/
