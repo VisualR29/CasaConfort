@@ -296,15 +296,15 @@ header nav div img {
     }
 }
 
-@media screen and (max-width: 1000px){
-    .grid-lista{
+@media screen and (max-width: 1000px) {
+    .grid-lista {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
 }
 
-@media screen and (max-width: 700px){
-    .grid-lista{
+@media screen and (max-width: 700px) {
+    .grid-lista {
         grid-template-columns: 1fr;
         grid-template-rows: 12fr;
     }
@@ -317,51 +317,69 @@ header nav div img {
     font-weight: bold;
 }
 
-.servicio-seccion{
+/**-----Cajas de servicios-----*/
+
+.servicio-seccion {
     padding-top: 48px;
 }
 
-.servicio-seccion h2{
+.servicio-seccion h2 {
     font-size: 35px;
     text-align: center;
     color: #45e6ff;
     margin: 25px;
 }
 
-.servicio-seccion:nth-child(even){
+.servicio-seccion:nth-child(even) {
     background-color: #2e355a;
 }
 
-.servicio-seccion:nth-child(odd){
+.servicio-seccion:nth-child(odd) {
     background-color: #0a1c28;
 }
 
-.servicio-seccion:nth-child(odd) div div{
-    border: 2px solid #163d50;
-    background-color: #315a6e;
-}
-
-.servicio-seccion:nth-child(odd) div div h3{
-    color: #45e6ff;
-}
-
-.servicio-cuadro{
+.servicio-cuadro {
     padding: 98px 0px 98px 98px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.servicio-elemento h3{
+.servicio-seccion:nth-child(odd) div div {
+    border: 2px solid #163d50;
+    background-color: #315a6e;
+}
+
+.servicio-seccion div div a {
+    text-decoration: none;
+    color: #315a6e;
+    background-color: #45e6ff;
+    font-weight: bolder;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.servicio-seccion:nth-child(odd) div div a {
+    color: #26006d;
+    background-color: #6962a7;
+}
+
+.servicio-elemento h3 {
+    font-size: 30px;
     padding: 20px;
     color: #26006d;
 }
 
-.servicio-elemento img{
+.servicio-seccion:nth-child(odd) div div h3 {
+    color: #45e6ff;
+}
+
+.servicio-elemento img {
     width: 300px;
     height: 200px;
 }
 
-.servicio-elemento{
+
+.servicio-elemento {
     width: 350px;
     height: 450px;
     border: 2px solid #7a75a8;
@@ -371,12 +389,40 @@ header nav div img {
     align-items: center;
 }
 
-.otros-servicios{
+@media screen and (max-width:1350px) {
+    .servicio-elemento {
+        width: 300px;
+        height: 400px;
+    }
+
+    .servicio-elemento h3 {
+        padding: 18px;
+        font-size: 22px;
+    }
+
+    .servicio-elemento img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .otros-servicios a {
+        margin-bottom: 45px;
+    }
+}
+
+/* @media screen and (max-width:1100px) {
+    .servicio-cuadro{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+.otros-servicios {
     display: flex;
     justify-content: center;
 }
 
-.otros-servicios a{
+.otros-servicios a {
     text-decoration: none;
     background-color: #163d50;
     color: #45e6ff;
@@ -392,6 +438,7 @@ header nav div img {
     align-items: center;
     text-align: center;
 }
+
 
 /*?--------          About         --------*/
 
