@@ -310,6 +310,13 @@ header nav div img {
     }
 }
 
+.lista-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .lista-elemento a {
     text-decoration: none;
     color: #45e6ff;
@@ -430,13 +437,6 @@ header nav div img {
     margin-bottom: 50px;
     border-radius: 10px;
     font-weight: bold;
-}
-
-.lista-elemento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 
