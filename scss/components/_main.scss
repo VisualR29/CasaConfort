@@ -47,7 +47,7 @@
         align-items: center;
 
         h2 {
-            color: #5c04ff;
+            color: nth($colores, 8);
             padding-top: 20px;
         }
 
@@ -69,56 +69,56 @@
     margin-right: 10vh;
 
     h2 {
-        color: #5c04ff;
+        color: nth($colores, 8);
         padding: 10px;
         text-align: center;
     }
 }
 
 .carrusel-img {
-    border: 2px solid #130e1a;
+    border: 2px solid nth($colores, 2);
 }
 
 .carrusel-text {
-    background-color: #5c04ff;
+    background-color: nth($colores, 8);
 }
 
 .boton-comprar {
-    background-color: #e2e2e2c6;
+    background-color: nth($colores, 13);
     border-radius: 10px;
     padding: 5px;
     text-decoration: none;
-    color: #6962a7;
+    color: nth($colores, 9);
 }
 
 .nos-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    background-color: #e2e2e2;
+    background-color: nth($colores, 13);
 
     .nosotros {
         text-align: center;
         margin: 5px 25px 5px 25px;
 
         h2 {
-            color: #5c04ff;
+            color: nth($colores, 8);
         }
 
         h3 {
-            color: #bb9afa;
-            background-color: #2e355a;
+            color: nth($colores, 11);
+            background-color: nth($colores, 4);
         }
 
         a {
             text-decoration: none;
-            color: #bb9afa;
-            background-color: #130e1a;
+            color: nth($colores, 11);
+            background-color: nth($colores, 2);
             padding: 2px 5px 2px 5px;
             border-radius: 10px;
 
             &:hover {
-                color: #45e6ff;
+                color: nth($colores, 7);
             }
         }
     }
@@ -135,13 +135,13 @@
 
         h2 {
             grid-area: contacta;
-            color: #5c04ff;
+            color: nth($colores, 8);
         }
 
         .red1 {
             grid-area: whats;
-            background-color: #0a1c28;
-            color: #bb9afa;
+            background-color: nth($colores, 1);
+            color: nth($colores, 11);
             border-radius: 20px;
             padding: 5px;
 
@@ -149,8 +149,8 @@
 
         .red2 {
             grid-area: insta;
-            background-color: #0a1c28;
-            color: #bb9afa;
+            background-color: nth($colores, 1);
+            color: nth($colores, 11);
             border-radius: 20px;
             padding: 5px;
 
@@ -161,13 +161,13 @@
 
             a {
                 text-decoration: none;
-                color: #bb9afa;
-                background-color: #130e1a;
+                color: nth($colores, 11);
+                background-color: nth($colores, 2);
                 padding: 2px 5px 2px 5px;
                 border-radius: 10px;
 
                 &:hover {
-                    color: #45e6ff;
+                    color: nth($colores, 7);
                 }
             }
         }
@@ -179,11 +179,11 @@
 //###########################################################//
 
 .lista {
-    background-color: #130e1a;
+    background-color: nth($colores, 2);
 
     h1 {
         text-align: center;
-        color: #c9e5e9;
+        color: nth($colores, 12);
         font-size: 60px;
         padding: 19px;
     }
@@ -204,7 +204,7 @@
 
             a {
                 text-decoration: none;
-                color: #45e6ff;
+                color: nth($colores, 7);
                 font-size: 20px;
                 font-weight: bold;
             }
@@ -218,32 +218,32 @@
     h2 {
         font-size: 35px;
         text-align: center;
-        color: #45e6ff;
+        color: nth($colores, 7);
         margin: 25px;
         // font-size: 25px;
         // margin: 18px;
     }
 
     &:nth-child(even) {
-        background-color: #2e355a;
+        background-color: nth($colores, 4);
 
     }
 
     &:nth-child(odd) {
-        background-color: #0a1c28;
+        background-color: nth($colores, 1);
 
         .servicio-cuadro {
             .servicio-elemento {
-                border: 2px solid #163d50;
+                border: 2px solid nth($colores, 3);
                 background-color: #315a6e;
 
                 a {
-                    color: #26006d;
-                    background-color: #6962a7;
+                    color: nth($colores, 5);
+                    background-color: nth($colores, 9);
                 }
 
                 h3 {
-                    color: #45e6ff;
+                    color: nth($colores, 7);
                 }
             }
         }
@@ -264,12 +264,12 @@
             width: 350px;
             height: 380px;
             border: 2px solid #7a75a8;
-            background-color: #6962a7;
+            background-color: nth($colores, 9);
 
             h3 {
                 font-size: 30px;
                 padding: 20px;
-                color: #26006d;
+                color: nth($colores, 5);
             }
 
             img {
@@ -280,7 +280,7 @@
             a {
                 text-decoration: none;
                 color: #315a6e;
-                background-color: #45e6ff;
+                background-color: nth($colores, 7);
                 font-weight: bolder;
                 margin-top: 20px;
                 padding: 7px;
@@ -295,8 +295,8 @@
 
         a {
             text-decoration: none;
-            background-color: #163d50;
-            color: #45e6ff;
+            background-color: nth($colores, 3);
+            color: nth($colores, 7);
             padding: 10px;
             margin-bottom: 50px;
             border-radius: 10px;
@@ -310,22 +310,22 @@
 //###########################################################//
 
 .about-title {
-    background-color: #130e1a;
+    background-color: nth($colores, 2);
     text-align: center;
     padding: 25px;
 
     h1 {
-        color: #6962a7;
+        color: nth($colores, 9);
     }
 
     h2 {
-        color: #bb9afa;
+        color: nth($colores, 11);
         font-size: 45px;
     }
 }
 
 .about-topic {
-    background-color: #c9e5e9;
+    background-color: nth($colores, 12);
     text-align: center;
     padding: 10px;
 }
@@ -335,7 +335,7 @@
     grid-template-columns: 75% 25%;
 
     .frases {
-        background-color: #f3eae8;
+        background-color: nth($colores, 14);
         padding: 10px;
 
         h3 {
@@ -349,20 +349,21 @@
 //###########################################################//
 
 .socialpage {
-    background-color: #f3eae8;
+    background-color: nth($colores, 2);
     text-align: center;
-    color: #130e1a;
-
+    
     h1 {
         padding: 30px;
+        color: nth($colores, 9);
     }
 
     .seccontenido {
-        background-color: #c9e5e9;
+        background-color: nth($colores, 12);
 
         h2 {
             font-size: xx-large;
             padding-top: 15px;
+            color: nth($colores, 5);
         }
 
         div {
@@ -376,8 +377,8 @@
                 width: 300px;
                 height: 430px;
                 box-sizing: border-box;
-                background-color: #6962a7;
-                border: 3px solid #0a1c28;
+                background-color: nth($colores, 9);
+                border: 3px solid nth($colores, 1);
                 padding: 35px;
                 display: flex;
                 flex-direction: column;
@@ -391,12 +392,12 @@
                 }
 
                 .link {
-                    background-color: #32a2bc;
-                    border: 2px solid #163d50;
+                    background-color: nth($colores, 6);
+                    border: 2px solid nth($colores, 3);
                     border-radius: 8px;
                     padding: 2px;
                     text-decoration: none;
-                    color: #0a1c28;
+                    color: nth($colores, 1);
                     font-size: x-large;
                     font-weight: bold;
                 }
@@ -405,11 +406,12 @@
     }
 
     .seccontacto {
-        background-color: #c9e5e9;
+        background-color: nth($colores, 12);
 
         h2 {
             font-size: xx-large;
             padding-top: 15px;
+            color: nth($colores, 5);
         }
 
         div {
@@ -423,8 +425,8 @@
                 width: 300px;
                 height: 430px;
                 box-sizing: border-box;
-                background-color: #6962a7;
-                border: 3px solid #0a1c28;
+                background-color: nth($colores, 9);
+                border: 3px solid nth($colores, 1);
                 padding: 35px;
                 display: flex;
                 flex-direction: column;
@@ -438,12 +440,12 @@
                 }
 
                 .link {
-                    background-color: #32a2bc;
-                    border: 2px solid #163d50;
+                    background-color: nth($colores, 6);
+                    border: 2px solid nth($colores, 3);
                     border-radius: 8px;
                     padding: 2px;
                     text-decoration: none;
-                    color: #0a1c28;
+                    color: nth($colores, 1);
                     font-size: x-large;
                     font-weight: bold;
                 }
@@ -482,14 +484,14 @@
             padding: 8px;
             text-decoration: none;
             letter-spacing: 2px;
-            color: #0a1c28;
-            outline: 2px solid #45e6ff;
+            color: nth($colores, 1);
+            outline: 2px solid nth($colores, 7);
             position: relative;
             overflow: hidden;
             transition: color 1s;
 
             &:hover {
-                color: #5c04ff;
+                color: nth($colores, 8);
             }
         }
     }

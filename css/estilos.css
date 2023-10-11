@@ -1,6 +1,11 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'MagallanesLight'; }
+
+@font-face {
+  font-family: 'MagallanesLigth';
+  src: url(./../sources/Magallanes/MagallanesLight.ttf); }
 
 header nav {
   background-color: #2e355a;
@@ -77,7 +82,7 @@ header nav {
   background-color: #5c04ff; }
 
 .boton-comprar {
-  background-color: #e2e2e2c6;
+  background-color: #e2e2e2;
   border-radius: 10px;
   padding: 5px;
   text-decoration: none;
@@ -247,16 +252,17 @@ header nav {
       text-align: center; }
 
 .socialpage {
-  background-color: #f3eae8;
-  text-align: center;
-  color: #130e1a; }
+  background-color: #130e1a;
+  text-align: center; }
   .socialpage h1 {
-    padding: 30px; }
+    padding: 30px;
+    color: #6962a7; }
   .socialpage .seccontenido {
     background-color: #c9e5e9; }
     .socialpage .seccontenido h2 {
       font-size: xx-large;
-      padding-top: 15px; }
+      padding-top: 15px;
+      color: #26006d; }
     .socialpage .seccontenido div {
       display: flex;
       flex-wrap: wrap;
@@ -289,7 +295,8 @@ header nav {
     background-color: #c9e5e9; }
     .socialpage .seccontacto h2 {
       font-size: xx-large;
-      padding-top: 15px; }
+      padding-top: 15px;
+      color: #26006d; }
     .socialpage .seccontacto div {
       display: flex;
       flex-wrap: wrap;
