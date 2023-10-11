@@ -1,0 +1,30 @@
+footer {
+    background-color: #130e1a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        a {
+            i {
+                color: #bb9afa;
+                font-size: 60px;
+                margin: 50px;
+
+                &:hover {
+                    color: #5c04ff;
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: #6962a7;
+    }
+
+    p {
+        color: #6962a7;
+    }
+
+}

@@ -1,0 +1,24 @@
+header {
+    nav {
+        background-color: nth($colores , 4);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            div {
+                .profile {
+                    display: flex;
+                    justify-content: end;
+                }
+
+                a {
+                    img {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
