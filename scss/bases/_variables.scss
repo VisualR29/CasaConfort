@@ -1,5 +1,16 @@
 // 1 -> 15
-$colores: 
-#0a1c28, #130e1a, #163d50, #2e355a, #26006d, 
-#32a2bc, #45e6ff, #5c04ff, #6962a7, #777772, 
-#bb9afa, #c9e5e9, #e2e2e2, #f3eae8, #ffdff4
+$colores: #0a1c28, #130e1a, #163d50, #2e355a, #26006d, #32a2bc, #45e6ff, #5c04ff, #6962a7, #777772, #bb9afa, #c9e5e9, #e2e2e2, #f3eae8, #ffdff4;
+
+%flex-center{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@mixin size($ancho, $alto, $pad, $margen){
+    width: $ancho;
+    height: $alto;
+    padding: $pad;
+    margin: $margen;
+}

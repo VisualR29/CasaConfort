@@ -1,3 +1,7 @@
+header nav, .banner div, .somos div, .lista .grid-lista .lista-elemento, .servicio-seccion .servicio-cuadro .servicio-elemento, .servicio-seccion .otros-servicios, .socialpage .seccontenido div div, .socialpage .seccontacto div div, .registro, footer {
+  display: flex;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +14,7 @@
 header nav {
   background-color: #2e355a;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
   header nav div div .profile {
     display: flex;
     justify-content: end; }
@@ -26,9 +28,7 @@ header nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .banner div h1 {
     background-color: #2e355a70;
     text-align: center;
@@ -55,9 +55,7 @@ header nav {
   column-gap: 20px;
   background-color: #e2e2e2; }
   .somos div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
     .somos div h2 {
       color: #5c04ff;
       padding-top: 20px; }
@@ -156,10 +154,8 @@ header nav {
     grid-column-gap: 28px;
     grid-row-gap: 30px; }
     .lista .grid-lista .lista-elemento {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
+      text-align: center;
+      justify-content: center; }
       .lista .grid-lista .lista-elemento a {
         text-decoration: none;
         color: #45e6ff;
@@ -193,11 +189,11 @@ header nav {
     flex-direction: row;
     justify-content: space-evenly; }
     .servicio-seccion .servicio-cuadro .servicio-elemento {
-      display: flex;
       flex-direction: column;
-      align-items: center;
       width: 350px;
       height: 380px;
+      padding: 0;
+      margin: 0;
       border: 2px solid #7a75a8;
       background-color: #6962a7; }
       .servicio-seccion .servicio-cuadro .servicio-elemento h3 {
@@ -206,7 +202,9 @@ header nav {
         color: #26006d; }
       .servicio-seccion .servicio-cuadro .servicio-elemento img {
         width: 300px;
-        height: 200px; }
+        height: 200px;
+        padding: 0;
+        margin: 0; }
       .servicio-seccion .servicio-cuadro .servicio-elemento a {
         text-decoration: none;
         color: #315a6e;
@@ -216,7 +214,6 @@ header nav {
         padding: 7px;
         border-radius: 10px; }
   .servicio-seccion .otros-servicios {
-    display: flex;
     justify-content: center; }
     .servicio-seccion .otros-servicios a {
       text-decoration: none;
@@ -272,16 +269,18 @@ header nav {
       .socialpage .seccontenido div div {
         width: 300px;
         height: 430px;
+        padding: 35px;
+        margin: 0;
         box-sizing: border-box;
         background-color: #6962a7;
         border: 3px solid #0a1c28;
-        padding: 35px;
-        display: flex;
         flex-direction: column;
-        align-items: center; }
+        margin-bottom: 30px; }
         .socialpage .seccontenido div div a img {
           width: 180px;
-          height: 180px; }
+          height: 180px;
+          padding: 0;
+          margin: 0; }
         .socialpage .seccontenido div div .link {
           background-color: #32a2bc;
           border: 2px solid #163d50;
@@ -306,16 +305,17 @@ header nav {
       .socialpage .seccontacto div div {
         width: 300px;
         height: 430px;
+        padding: 35px;
+        margin: 0;
         box-sizing: border-box;
         background-color: #6962a7;
         border: 3px solid #0a1c28;
-        padding: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
+        flex-direction: column; }
         .socialpage .seccontacto div div a img {
           width: 180px;
-          height: 180px; }
+          height: 180px;
+          padding: 0;
+          margin: 0; }
         .socialpage .seccontacto div div .link {
           background-color: #32a2bc;
           border: 2px solid #163d50;
@@ -327,23 +327,26 @@ header nav {
           font-weight: bold; }
 
 .registro {
-  margin: 40px;
-  display: flex;
-  flex-direction: column; }
+  background-color: #7a75a8;
+  color: #130e1a;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center; }
   .registro h1 {
+    font-size: 40px;
     margin-left: 20px; }
   .registro form div {
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
     .registro form div h3 {
       margin-left: 20px; }
   .registro .registro-boton {
-    margin-left: 20px; }
+    margin-top: 20px; }
     .registro .registro-boton a {
       padding: 8px;
       text-decoration: none;
       letter-spacing: 2px;
       color: #0a1c28;
-      outline: 2px solid #45e6ff;
+      outline: 2px solid #5c04ff;
       position: relative;
       overflow: hidden;
       transition: color 1s; }
@@ -353,9 +356,7 @@ header nav {
 footer {
   background-color: #130e1a;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   footer div a i {
     color: #bb9afa;
     font-size: 60px;

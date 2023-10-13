@@ -6,9 +6,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        align-items: center;
 
         h1 {
             background-color: #2e355a70;
@@ -42,9 +41,8 @@
     background-color: #e2e2e2;
 
     div {
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        align-items: center;
 
         h2 {
             color: nth($colores, 8);
@@ -197,10 +195,9 @@
         grid-row-gap: 30px;
 
         .lista-elemento {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
+            @extend %flex-center;
+            justify-content: center;
 
             a {
                 text-decoration: none;
@@ -220,8 +217,6 @@
         text-align: center;
         color: nth($colores, 7);
         margin: 25px;
-        // font-size: 25px;
-        // margin: 18px;
     }
 
     &:nth-child(even) {
@@ -258,11 +253,9 @@
         justify-content: space-evenly;
 
         .servicio-elemento {
-            display: flex;
+            @extend %flex-center;
             flex-direction: column;
-            align-items: center;
-            width: 350px;
-            height: 380px;
+            @include size(350px, 380px, 0, 0);
             border: 2px solid #7a75a8;
             background-color: nth($colores, 9);
 
@@ -273,8 +266,7 @@
             }
 
             img {
-                width: 300px;
-                height: 200px;
+                @include size(300px, 200px, 0, 0);
             }
 
             a {
@@ -290,7 +282,7 @@
     }
 
     .otros-servicios {
-        display: flex;
+        @extend %flex-center;
         justify-content: center;
 
         a {
@@ -374,20 +366,17 @@
             text-align: center;
 
             div {
-                width: 300px;
-                height: 430px;
+                @include size(300px, 430px, 35px, 0);
                 box-sizing: border-box;
                 background-color: nth($colores, 9);
                 border: 3px solid nth($colores, 1);
-                padding: 35px;
-                display: flex;
+                @extend %flex-center;
                 flex-direction: column;
-                align-items: center;
+                margin-bottom: 30px;
 
                 a {
                     img {
-                        width: 180px;
-                        height: 180px;
+                        @include size(180px, 180px, 0, 0);
                     }
                 }
 
@@ -422,20 +411,16 @@
             text-align: center;
 
             div {
-                width: 300px;
-                height: 430px;
+                @include size(300px, 430px, 35px, 0);
                 box-sizing: border-box;
                 background-color: nth($colores, 9);
                 border: 3px solid nth($colores, 1);
-                padding: 35px;
-                display: flex;
+                @extend %flex-center;
                 flex-direction: column;
-                align-items: center;
 
                 a {
                     img {
-                        width: 180px;
-                        height: 180px;
+                        @include size(180px, 180px, 0, 0);
                     }
                 }
 
@@ -459,18 +444,22 @@
 //###########################################################//
 
 .registro {
-    margin: 40px;
-    display: flex;
+    background-color: #7a75a8;
+    color: nth($colores, 2);
+    padding: 40px;
+    @extend %flex-center;
     flex-direction: column;
-
+    justify-content: center;
+    
+    
     h1 {
+        font-size: 40px;
         margin-left: 20px;
     }
 
     form {
         div {
-            margin-bottom: 10px;
-
+            margin-bottom: 15px;
             h3 {
                 margin-left: 20px;
             }
@@ -478,14 +467,14 @@
     }
 
     .registro-boton {
-        margin-left: 20px;
+        margin-top: 20px;
 
         a {
             padding: 8px;
             text-decoration: none;
             letter-spacing: 2px;
             color: nth($colores, 1);
-            outline: 2px solid nth($colores, 7);
+            outline: 2px solid nth($colores, 8);
             position: relative;
             overflow: hidden;
             transition: color 1s;

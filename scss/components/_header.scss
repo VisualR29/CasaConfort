@@ -2,9 +2,9 @@ header {
     nav {
         background-color: nth($colores , 4);
         padding: 10px;
-        display: flex;
+        @extend %flex-center;
         justify-content: space-between;
-        align-items: center;
+        
 
         div {
             div {
