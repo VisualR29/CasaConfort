@@ -99,6 +99,28 @@
             }
         }
     }
+
+    .registro{
+        font-size: 20px;
+        padding: 20px;
+        h1{
+            font-size: 30px;
+        }
+        form{
+            div{
+                margin-bottom: 10px;
+                label{
+                    width: 50vw;
+                }
+                input{
+                    width: 50vw;
+                }
+                h3{
+
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
