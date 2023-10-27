@@ -83,150 +83,156 @@
         }
     }
 
-    .about-grid{
+    .about-grid {
         grid-template-columns: 1fr;
     }
-}
 
-@media screen and (max-width: 750px) {
-    footer {
-        div {
+    .registro {
+        .tabla-registro {
+            width: 400px;
+            height: 600px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            form {
+                div {
+                    margin-bottom: 10px;
+
+                    h3 {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
             a {
-                i {
-                    font-size: 40px;
-                    margin: 12px;
-                }
+                padding: 5px;
             }
+
         }
     }
 
-    .registro{
-        font-size: 20px;
-        padding: 20px;
-        h1{
-            font-size: 30px;
-        }
-        form{
-            div{
-                margin-bottom: 10px;
-                label{
-                    width: 50vw;
-                }
-                input{
-                    width: 50vw;
-                }
-                h3{
-                font-size: 25px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .lista {
-        .grid-lista {
-            grid-template-columns: 1fr;
-            grid-template-rows: 12fr;
-        }
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .banner {
-        div {
-            background-image: url(../img/minibanner.png);
-        }
-    }
-}
-
-@media screen and (max-width:599px) {
-    .servicio-seccion {
-        .servicio-cuadro {
-            padding: 68px 45px 68px 45px;
-
-            .servicio-elemento {
-                width: 200px;
-                height: 250px;
-
-                h3 {
-                    padding: 13px;
-                    font-size: 22px;
-                }
-
-                img {
-                    width: 150px;
-                    height: 100px;
-                }
-
+    @media screen and (max-width: 750px) {
+        footer {
+            div {
                 a {
-                    font-size: 15px;
+                    i {
+                        font-size: 40px;
+                        margin: 12px;
+                    }
                 }
             }
         }
 
-        .otros-servicios {
-            a {
-                margin-bottom: 35px;
-                font-size: 13px;
+        
+    }
+
+    @media screen and (max-width: 700px) {
+        .lista {
+            .grid-lista {
+                grid-template-columns: 1fr;
+                grid-template-rows: 12fr;
             }
         }
     }
-}
 
-@media screen and (max-width: 400px) {
-    .nos-con {
-        .contactos {
-            grid-template-columns: 1fr;
-            grid-template-rows: 25px 250px 300px 50px;
-            gap: 25px;
-            grid-template-areas:
-                "contacta"
-                "whats"
-                "insta"
-                "link";
-
-            .red1 {
-                margin: 50px;
-                height: 250px;
-            }
-
-            .red2 {
-                margin: 50px;
-                height: 250px;
-            }
-
-            .redes-link {
-                margin-bottom: 40px;
+    @media screen and (max-width: 650px) {
+        .banner {
+            div {
+                background-image: url(../img/minibanner.png);
             }
         }
     }
-}
 
-@media screen and (max-width:1350px) and (min-width:1150px) {
-    .servicio-seccion {
+    @media screen and (max-width:599px) {
+        .servicio-seccion {
+            .servicio-cuadro {
+                padding: 68px 45px 68px 45px;
 
-        .servicio-cuadro {
-            .servicio-elemento {
-                width: 300px;
-                height: 330px;
+                .servicio-elemento {
+                    width: 200px;
+                    height: 250px;
 
-                h3 {
-                    padding: 18px;
-                    font-size: 22px;
+                    h3 {
+                        padding: 13px;
+                        font-size: 22px;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 100px;
+                    }
+
+                    a {
+                        font-size: 15px;
+                    }
                 }
+            }
 
-                img {
-                    width: 250px;
-                    height: 150px;
+            .otros-servicios {
+                a {
+                    margin-bottom: 35px;
+                    font-size: 13px;
                 }
-
             }
         }
+    }
 
-        .otros-servicios {
-            a {
-                margin-bottom: 45px;
+    @media screen and (max-width: 400px) {
+        .nos-con {
+            .contactos {
+                grid-template-columns: 1fr;
+                grid-template-rows: 25px 250px 300px 50px;
+                gap: 25px;
+                grid-template-areas:
+                    "contacta"
+                    "whats"
+                    "insta"
+                    "link";
+
+                .red1 {
+                    margin: 50px;
+                    height: 250px;
+                }
+
+                .red2 {
+                    margin: 50px;
+                    height: 250px;
+                }
+
+                .redes-link {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1350px) and (min-width:1150px) {
+        .servicio-seccion {
+
+            .servicio-cuadro {
+                .servicio-elemento {
+                    width: 300px;
+                    height: 330px;
+
+                    h3 {
+                        padding: 18px;
+                        font-size: 22px;
+                    }
+
+                    img {
+                        width: 250px;
+                        height: 150px;
+                    }
+
+                }
+            }
+
+            .otros-servicios {
+                a {
+                    margin-bottom: 45px;
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-header nav, .banner div, .somos div, .lista .grid-lista .lista-elemento, .servicio-seccion .servicio-cuadro .servicio-elemento, .servicio-seccion .otros-servicios, .socialpage .seccontenido div div, .socialpage .seccontacto div div, .registro, footer {
+header nav, .banner div, .somos div, .lista .grid-lista .lista-elemento, .servicio-seccion .servicio-cuadro .servicio-elemento, .servicio-seccion .otros-servicios, .about-title div, .socialpage .seccontenido div div, .socialpage .seccontacto div div, .registro .tabla-registro, .registro .tabla-registro form .alinear, footer {
   display: flex;
   align-items: center; }
 
@@ -230,9 +230,15 @@ header nav {
   padding: 25px; }
   .about-title h1 {
     color: #6962a7; }
-  .about-title h2 {
-    color: #bb9afa;
-    font-size: 45px; }
+  .about-title div {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .about-title div h2 {
+      color: #bb9afa;
+      font-size: 45px;
+      padding: 0px 30px 0px 30px; }
+    .about-title div img {
+      width: 80px; }
 
 .about-topic {
   background-color: #c9e5e9;
@@ -255,7 +261,7 @@ header nav {
     padding: 30px;
     color: #6962a7; }
   .socialpage .seccontenido {
-    background-color: #c9e5e9; }
+    background: linear-gradient(#c9e5e9, #32a2bc); }
     .socialpage .seccontenido h2 {
       font-size: xx-large;
       padding-top: 15px;
@@ -291,7 +297,8 @@ header nav {
           font-size: x-large;
           font-weight: bold; }
   .socialpage .seccontacto {
-    background-color: #c9e5e9; }
+    background: linear-gradient(#c9e5e9, #32a2bc);
+    padding: 30px; }
     .socialpage .seccontacto h2 {
       font-size: xx-large;
       padding-top: 15px;
@@ -330,28 +337,38 @@ header nav {
   background-color: #7a75a8;
   color: #130e1a;
   padding: 40px;
-  flex-direction: column;
+  display: flex;
   justify-content: center; }
-  .registro h1 {
-    font-size: 40px;
-    margin-left: 20px; }
-  .registro form div {
-    margin-bottom: 15px; }
-    .registro form div h3 {
+  .registro .tabla-registro {
+    width: 500px;
+    height: 600px;
+    border: 2px solid #130e1a;
+    background-color: #6962a7;
+    flex-direction: column;
+    justify-content: center; }
+    .registro .tabla-registro h1 {
+      font-size: 40px;
       margin-left: 20px; }
-  .registro .registro-boton {
-    margin-top: 20px; }
-    .registro .registro-boton a {
-      padding: 8px;
-      text-decoration: none;
-      letter-spacing: 2px;
-      color: #0a1c28;
-      outline: 2px solid #5c04ff;
-      position: relative;
-      overflow: hidden;
-      transition: color 1s; }
-      .registro .registro-boton a:hover {
-        color: #5c04ff; }
+    .registro .tabla-registro form div {
+      margin-bottom: 15px; }
+      .registro .tabla-registro form div h3 {
+        margin-left: 20px; }
+    .registro .tabla-registro form .alinear {
+      flex-direction: column;
+      justify-content: center; }
+    .registro .tabla-registro .registro-boton {
+      margin-top: 20px; }
+      .registro .tabla-registro .registro-boton a {
+        padding: 8px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #0a1c28;
+        outline: 2px solid #5c04ff;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s; }
+        .registro .tabla-registro .registro-boton a:hover {
+          color: #5c04ff; }
 
 footer {
   background-color: #130e1a;
@@ -408,36 +425,34 @@ footer {
       .nos-con .contactos h2 {
         margin-top: 30px; }
   .about-grid {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .registro .tabla-registro {
+    width: 400px;
+    height: 600px; }
+    .registro .tabla-registro h1 {
+      font-size: 20px; }
+    .registro .tabla-registro form div {
+      margin-bottom: 10px; }
+      .registro .tabla-registro form div h3 {
+        margin-left: 15px; }
+    .registro .tabla-registro a {
+      padding: 5px; } }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) and (max-width: 750px) {
   footer div a i {
     font-size: 40px;
-    margin: 12px; }
-  .registro {
-    font-size: 20px;
-    padding: 20px; }
-    .registro h1 {
-      font-size: 30px; }
-    .registro form div {
-      margin-bottom: 10px; }
-      .registro form div label {
-        width: 50vw; }
-      .registro form div input {
-        width: 50vw; }
-      .registro form div h3 {
-        font-size: 25px; } }
+    margin: 12px; } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) and (max-width: 700px) {
   .lista .grid-lista {
     grid-template-columns: 1fr;
     grid-template-rows: 12fr; } }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) and (max-width: 650px) {
   .banner div {
     background-image: url(../img/minibanner.png); } }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 800px) and (max-width: 599px) {
   .servicio-seccion .servicio-cuadro {
     padding: 68px 45px 68px 45px; }
     .servicio-seccion .servicio-cuadro .servicio-elemento {
@@ -455,7 +470,7 @@ footer {
     margin-bottom: 35px;
     font-size: 13px; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) and (max-width: 400px) {
   .nos-con .contactos {
     grid-template-columns: 1fr;
     grid-template-rows: 25px 250px 300px 50px;
@@ -470,7 +485,7 @@ footer {
     .nos-con .contactos .redes-link {
       margin-bottom: 40px; } }
 
-@media screen and (max-width: 1350px) and (min-width: 1150px) {
+@media screen and (max-width: 800px) and (max-width: 1350px) and (min-width: 1150px) {
   .servicio-seccion .servicio-cuadro .servicio-elemento {
     width: 300px;
     height: 330px; }

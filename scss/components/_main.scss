@@ -310,9 +310,20 @@
         color: nth($colores, 9);
     }
 
-    h2 {
-        color: nth($colores, 11);
-        font-size: 45px;
+    div {
+        @extend %flex-center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2 {
+            color: nth($colores, 11);
+            font-size: 45px;
+            padding: 0px 30px 0px 30px;
+        }
+
+        img {
+            width: 80px;
+        }
     }
 }
 
@@ -343,14 +354,14 @@
 .socialpage {
     background-color: nth($colores, 2);
     text-align: center;
-    
+
     h1 {
         padding: 30px;
         color: nth($colores, 9);
     }
 
     .seccontenido {
-        background-color: nth($colores, 12);
+        background: linear-gradient(nth($colores, 12), nth($colores, 6));
 
         h2 {
             font-size: xx-large;
@@ -395,7 +406,8 @@
     }
 
     .seccontacto {
-        background-color: nth($colores, 12);
+        background: linear-gradient(nth($colores, 12), nth($colores, 6));
+        padding: 30px;
 
         h2 {
             font-size: xx-large;
@@ -447,40 +459,56 @@
     background-color: #7a75a8;
     color: nth($colores, 2);
     padding: 40px;
-    @extend %flex-center;
-    flex-direction: column;
+    display: flex;
     justify-content: center;
-    
-    
-    h1 {
-        font-size: 40px;
-        margin-left: 20px;
-    }
 
-    form {
-        div {
-            margin-bottom: 15px;
-            h3 {
-                margin-left: 20px;
+    .tabla-registro {
+        width: 500px;
+        height: 600px;
+        border: 2px solid nth($colores, 2);
+        background-color: nth($colores , 9);
+        @extend %flex-center;
+        flex-direction: column;
+        justify-content: center;
+
+
+        h1 {
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        form {
+            div {
+                margin-bottom: 15px;
+
+                h3 {
+                    margin-left: 20px;
+                }
+            }
+
+            .alinear {
+                @extend %flex-center;
+                flex-direction: column;
+                justify-content: center;
             }
         }
-    }
 
-    .registro-boton {
-        margin-top: 20px;
+        .registro-boton {
+            margin-top: 20px;
 
-        a {
-            padding: 8px;
-            text-decoration: none;
-            letter-spacing: 2px;
-            color: nth($colores, 1);
-            outline: 2px solid nth($colores, 8);
-            position: relative;
-            overflow: hidden;
-            transition: color 1s;
+            a {
+                padding: 8px;
+                text-decoration: none;
+                letter-spacing: 2px;
+                color: nth($colores, 1);
+                outline: 2px solid nth($colores, 8);
+                position: relative;
+                overflow: hidden;
+                transition: color 1s;
 
-            &:hover {
-                color: nth($colores, 8);
+                &:hover {
+                    color: nth($colores, 8);
+                }
             }
         }
     }
