@@ -15,7 +15,7 @@
     <meta property="og:type" content="service">
     <meta property="og:title" content="CasaConfort | Servicios para el hogar">
     <meta property="og:url" content="https://casaconfort.netlify.app/">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://casaconfort.netlify.app/img/favicon.ico">
     <meta property="og:description"
         content="Ofrecemos servicios que te harán más fácil tu vida rutinaria en casa, servicios desde jardinería, limpieza, electricista, fontanero, chef, tapicero">
     <!--Favicon-->
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CasaConfort</title>
 </head>
 
@@ -59,7 +61,7 @@
 
         <section class="banner">
             <div>
-                <h1>CasaConfort Multiservicios</h1>
+                <h1 class="animate__animated animate__rubberBand">CasaConfort Multiservicios</h1>
                 <p>Tu hogar, nuestro compromiso: comodidad a tu medida.</p>
             </div>
         </section>
@@ -135,7 +137,7 @@
         <hr>
 
         <section class="nos-con">
-            <div class="nosotros">
+            <div class="nosotros" data-aos="fade-right">
                 <h2>Sobre nosotros</h2>
                 <h3>Misión</h3>
                 <p>Estamos dedicados a mejorar la calidad de vida de las personas
@@ -148,7 +150,7 @@
                 <hr>
                 <a href="./pages/about.html">Ver más</a>
             </div>
-            <div class="contactos">
+            <div class="contactos" data-aos="fade-left">
                 <h2>Contáctanos para más detalles</h2>
                 <div class="red1">
                     <h3>WhatsApp</h3>
@@ -189,8 +191,9 @@
         <p>By Luis Esteban Rojas Gonzalez 2023</p>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

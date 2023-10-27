@@ -14,3 +14,14 @@ $colores: #0a1c28, #130e1a, #163d50, #2e355a, #26006d, #32a2bc, #45e6ff, #5c04ff
     padding: $pad;
     margin: $margen;
 }
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

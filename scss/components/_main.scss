@@ -322,7 +322,7 @@
         }
 
         img {
-            width: 80px;
+            width: 70px;
         }
     }
 }
@@ -375,6 +375,9 @@
             justify-content: space-around;
             margin: 30px;
             text-align: center;
+            animation-duration: 2s;
+            animation-name: mostrar;
+            animation-timing-function: ease-in;
 
             div {
                 @include size(300px, 430px, 35px, 0);
@@ -421,6 +424,9 @@
             justify-content: space-around;
             margin: 30px;
             text-align: center;
+            animation-duration: 1s;
+            animation-name: mostrar;
+            animation-timing-function: ease-in;
 
             div {
                 @include size(300px, 430px, 35px, 0);

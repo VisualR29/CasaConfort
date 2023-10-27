@@ -2,6 +2,14 @@ header nav, .banner div, .somos div, .lista .grid-lista .lista-elemento, .servic
   display: flex;
   align-items: center; }
 
+@keyframes mostrar {
+  0% {
+    opacity: 0;
+    transform: translateY(10%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -238,7 +246,7 @@ header nav {
       font-size: 45px;
       padding: 0px 30px 0px 30px; }
     .about-title div img {
-      width: 80px; }
+      width: 70px; }
 
 .about-topic {
   background-color: #c9e5e9;
@@ -271,7 +279,10 @@ header nav {
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 30px;
-      text-align: center; }
+      text-align: center;
+      animation-duration: 2s;
+      animation-name: mostrar;
+      animation-timing-function: ease-in; }
       .socialpage .seccontenido div div {
         width: 300px;
         height: 430px;
@@ -308,7 +319,10 @@ header nav {
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 30px;
-      text-align: center; }
+      text-align: center;
+      animation-duration: 1s;
+      animation-name: mostrar;
+      animation-timing-function: ease-in; }
       .socialpage .seccontacto div div {
         width: 300px;
         height: 430px;

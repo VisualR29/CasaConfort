@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./../css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CasaConfort | Services</title>
 </head>
 
@@ -46,7 +48,7 @@
     <main>
 
         <section class="lista">
-            <h1 id="inicio-servicios">SERVICIOS</h1>
+            <h1 class="animate__animated animate__heartBeat" id="inicio-servicios">SERVICIOS</h1>
             <div class="grid-lista">
                 <div class="lista-elemento">
                     <a href="#ventanas">Reparación de ventanas y puertas</a>
@@ -91,18 +93,18 @@
             <div class="servicio-seccion">
                 <h2 id="ventanas">Reparación de ventanas y puertas</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Intalación de ventana</h3>
                         <img src="./../img/ventanas1.jpg" alt="Modificación de ventanas">
                         <a href="#">Agregar al carrito</a>
 
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Reparación de marco</h3>
                         <img src="./../img/ventanas2.webp" alt="Remodelación de ventanas">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Intalación de puerta</h3>
                         <img src="./../img/ventanas3.jpg" alt="Remodelación de puertas">
                         <a href="#">Agregar al carrito</a>
@@ -116,17 +118,17 @@
             <div class="servicio-seccion">
                 <h2 id="electro">Mantenimiento electrodoméstico</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Estufa</h3>
                         <img src="./../img/manteelec1.jpg" alt="Reparacion de estufa">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Dispositivos chicos</h3>
                         <img src="./../img/manteelec2.jpg" alt="Tecnico en dispositivos electricos">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Horno</h3>
                         <img src="./../img/mantenelect3.png" alt="Reparación de un horno">
                         <a href="#">Agregar al carrito</a>
@@ -138,17 +140,17 @@
             <div class="servicio-seccion">
                 <h2 id="pintura">Pintura y decoración</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Pintura</h3>
                         <img src="./../img/pintor1.jpg" alt="Remodelación de pintura">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Decoración vintage</h3>
                         <img src="./../img/pintor2.jpg" alt="Remodelacion de interior">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Decoración casual</h3>
                         <img src="./../img/pintor3.jpg" alt="Decoración de hogar">
                         <a href="#">Agregar al carrito</a>
@@ -160,17 +162,17 @@
             <div class="servicio-seccion">
                 <h2 id="techos">Reparación de techos</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Intalación de lamina</h3>
                         <img src="./../img/roofing1.jpg" alt="Intalación de techo">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Intalación de cielo</h3>
                         <img src="./../img/roofing2.jpg" alt="Instalación de techos">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Reparación de tejado</h3>
                         <img src="./../img/roofing3.jpg" alt="Reparación de techos">
                         <a href="#">Agregar al carrito</a>
@@ -182,19 +184,20 @@
             <div class="servicio-seccion">
                 <h2 id="seguridad">Instalación de seguridad</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Camaras en vivo</h3>
                         <img src="./../img/seguridad1.png" alt="Instalación de sistema de camaras">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Camaras + Alarma</h3>
                         <img src="./../img/seguridad2.png" alt="Instalación de seguridad para el hogar">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Camaras + Servidor</h3>
-                        <img src="./../img/seguridad3.png" alt="Intalación de seguridad con sistema de recopilación de datos">
+                        <img src="./../img/seguridad3.png"
+                            alt="Intalación de seguridad con sistema de recopilación de datos">
                         <a href="#">Agregar al carrito</a>
                     </div>
                 </div>
@@ -204,17 +207,17 @@
             <div class="servicio-seccion">
                 <h2 id="mayores">Cuidado de mayores</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Cuidado diurno</h3>
                         <img src="./../img/mayores1.jpg" alt="Cuidador de mayores diurno">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Cuidado medico</h3>
                         <img src="./../img/mayores2.jpg" alt="Cuidador de mayores ambito medico">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Cuidado por horas</h3>
                         <img src="./../img/mayores3.jpg" alt="Servicio de cuidador de adultos por ciertas horas">
                         <a href="#">Agregar al carrito</a>
@@ -226,17 +229,17 @@
             <div class="servicio-seccion">
                 <h2 id="ninos">Cuidado de niños</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Sistema pedagógico</h3>
                         <img src="./../img/ninos.jpg" alt="Cuidador de niños con sistema de enseñanza">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Por una tarde</h3>
                         <img src="./../img/ninos1.jpg" alt="Niñera por un día">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Guardería en casa</h3>
                         <img src="./../img/ninos3.jpg" alt="Guardería en casa">
                         <a href="#">Agregar al carrito</a>
@@ -248,17 +251,17 @@
             <div class="servicio-seccion">
                 <h2 id="mudanza">Servicios de mudanza</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Completo</h3>
                         <img src="./../img/mudanza1.jpg" alt="Servicio de mudanza">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Logistico</h3>
                         <img src="./../img/mudanza2.jpg" alt="Logistica en cambio de hogar">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Express</h3>
                         <img src="./../img/mudanza3.jpg" alt="Servicio de mudanzas express">
                         <a href="#">Agregar al carrito</a>
@@ -270,17 +273,17 @@
             <div class="servicio-seccion">
                 <h2 id="lavanderia">Lavandería</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Lavado completo</h3>
                         <img src="./../img/lavan1.jpg" alt="Lavado de ropa">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Lavado cuidadoso</h3>
                         <img src="./../img/lavan2.jpg" alt="Lavado de ropa">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Lavado</h3>
                         <img src="./../img/lavan3.jpg" alt="Lavado de ropa">
                         <a href="#">Agregar al carrito</a>
@@ -292,17 +295,17 @@
             <div class="servicio-seccion">
                 <h2 id="limpieza">Limpieza</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Completo</h3>
                         <img src="./../img/limpieza.jpg" alt="Servicio de limpieza">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Profunda</h3>
                         <img src="./../img/limpieza2.jpg" alt="Servicio de limpieza a profundidad">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Básico</h3>
                         <img src="./../img/limpieza3.jpg" alt="Servicio de limpieza rápida">
                         <a href="#">Agregar al carrito</a>
@@ -314,17 +317,17 @@
             <div class="servicio-seccion">
                 <h2 id="chef">Chef</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Una comida</h3>
                         <img src="./../img/chef1.jpg" alt="Chef personal para una comida">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Las 3 comidas</h3>
                         <img src="./../img/chef2.jpg" alt="Chef privado para todo el día">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Fiesta</h3>
                         <img src="./../img/chef3.jpg" alt="Servicio de buffet para eventos grandes">
                         <a href="#">Agregar al carrito</a>
@@ -336,17 +339,17 @@
             <div class="servicio-seccion">
                 <h2 id="jardineria">Jardinería</h2>
                 <div class="servicio-cuadro">
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-left">
                         <h3>Podada</h3>
                         <img src="./../img/jardineria1.jpg" alt="Servicio de podada de arbustos y arboles">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-up">
                         <h3>Flores</h3>
                         <img src="./../img/jardineria2.jpg" alt="Cuidado y decoración de jardin">
                         <a href="#">Agregar al carrito</a>
                     </div>
-                    <div class="servicio-elemento">
+                    <div class="servicio-elemento" data-aos="flip-right">
                         <h3>Servicio completo</h3>
                         <img src="./../img/jardineria3.jpg" alt="Servicio completo de jardin">
                         <a href="#">Agregar al carrito</a>
@@ -376,6 +379,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
